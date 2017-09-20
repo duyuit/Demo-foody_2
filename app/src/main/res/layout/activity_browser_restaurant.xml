@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/custom_toolbar_details"
+    android:layout_height="match_parent"
+    tools:context="com.example.vukhachoi.demo_foody.browser_restaurant">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/cast_expanded_controller_control_toolbar_min_height"
+        android:background="@drawable/custom_toolbar_details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"></android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_centerInParent="true"
+            android:text="Browser Restaurant" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_fav1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"></android.support.v7.widget.Toolbar>
+
+    </RelativeLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:id="@+id/listview"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"></ListView>
+</RelativeLayout>
